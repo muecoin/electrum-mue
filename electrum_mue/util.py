@@ -84,12 +84,12 @@ def parse_URI(uri: str, on_pr: Callable = None, *, loop=None) -> dict:
 
     if ':' not in uri:
         if not bitcoin.is_address(uri):
-            raise InvalidBitcoinURI("Not a viacoin address")
+            raise InvalidBitcoinURI("Not a MonetaryUnit address")
         return {'address': uri}
 
     u = urllib.parse.urlparse(uri)
-    if u.scheme != 'viacoin':
-        raise InvalidBitcoinURI("Not a viacoin URI")
+    if u.scheme != 'monetaryunit':
+        raise InvalidBitcoinURI("Not a MonetaryUnit URI")
     address = u.path
 
     # python for android fails to parse query
@@ -106,7 +106,7 @@ def parse_URI(uri: str, on_pr: Callable = None, *, loop=None) -> dict:
     out = {k: v[0] for k, v in pq.items()}
     if address:
         if not bitcoin.is_address(address):
-            raise InvalidBitcoinURI(f"Invalid viacoin address: {address}")
+            raise InvalidBitcoinURI(f"Invalid MonetaryUnit address: {address}")
         out['address'] = address
     if 'amount' in out:
         am = out['amount']

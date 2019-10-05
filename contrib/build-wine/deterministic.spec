@@ -42,7 +42,7 @@ datas = [
     (home+'electrum_mue/locale', 'electrum_mue/locale'),
     (home+'electrum_mue/plugins', 'electrum_mue/plugins'),
     ('C:\\Program Files (x86)\\ZBar\\bin\\', '.'),
-    (home+'electrum/gui/icons', 'electrum/gui/icons'),
+    (home+'electrum_mue/gui/icons', 'electrum_mue/gui/icons'),
 ]
 datas += collect_data_files('trezorlib')
 datas += collect_data_files('safetlib')

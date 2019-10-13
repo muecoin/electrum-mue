@@ -18,26 +18,6 @@ Getting started
 Electrum-MUE is a pure python application. If you want to use the
 Qt interface, install the Qt dependencies::
 
-    sudo apt-get install python3-pyqt5 - Lightweight MonetaryUnit client
-===========================================
-
-Electrum-MUE is a port of Electrum, the Bitcoin wallet, to MonetaryUnit.
-
-::
-
-  Licence: MIT Licence
-  Original Author: Thomas Voegtlin
-  Author: Thomas Voegtlin
-  Language: Python (>= 3.6)
-  Homepage: https://electrum.monetaryunit.org/
-
-
-Getting started
-===============
-
-Electrum-MUE is a pure python application. If you want to use the
-Qt interface, install the Qt dependencies::
-
     sudo apt-get install python3-pyqt5
 
 If you downloaded the official package (tar.gz), you can run
